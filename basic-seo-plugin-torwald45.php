@@ -50,6 +50,7 @@ class BasicSEO_Torwald45 {
      * Plugin settings
      */
     private $settings = array();
+    private $admin;
     
     /**
      * Get plugin instance
@@ -196,6 +197,13 @@ class BasicSEO_Torwald45 {
      * Initialize plugin
      */
     public function init() {
+
+ // Initialize admin components
+    if (is_admin() && !$this->admin) {
+        require_once BASICSEO_TORWALD45_PLUGIN_DIR . 'admin/class-admin-init.php';
+        $this->admin = new BasicSEO_Torwald45_Admin_Init();
+    }
+
         // Load components based on enabled modules
         if ($this->get_setting('modules.meta_tags')) {
             $this->load_meta_components();
