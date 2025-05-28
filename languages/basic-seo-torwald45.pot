@@ -1,0 +1,298 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024 Torwald45
+# This file is distributed under the same license as the Basic SEO Plugin Torwald45 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Basic WP/Woo SEO Plugin 1.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/Torwald45/basic-seo-plugin/issues\n"
+"POT-Creation-Date: 2024-05-25 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin/class-admin-init.php:45
+msgid "Basic SEO Settings"
+msgstr ""
+
+#: admin/class-admin-init.php:46
+msgid "Basic SEO"
+msgstr ""
+
+#: admin/class-admin-init.php:66
+msgid "Dashboard"
+msgstr ""
+
+#: admin/class-admin-init.php:70
+msgid "Settings"
+msgstr ""
+
+#: admin/class-admin-init.php:125
+msgid "Saving..."
+msgstr ""
+
+#: admin/class-admin-init.php:126
+msgid "Settings saved!"
+msgstr ""
+
+#: admin/class-admin-init.php:127
+msgid "Error saving settings!"
+msgstr ""
+
+#: includes/meta/class-post-meta.php:82
+msgid "Warning: Description is too long for optimal SEO"
+msgstr ""
+
+#: includes/meta/class-post-meta.php:87
+msgid "Description for search engine results. Recommended length: 150-160 characters."
+msgstr ""
+
+#: includes/meta/class-admin-columns.php:25
+msgid "SEO Title"
+msgstr ""
+
+#: includes/meta/class-admin-columns.php:26
+msgid "Meta Description"
+msgstr ""
+
+#: includes/meta/class-term-meta.php:35
+msgid "Custom title for search results and browser tab."
+msgstr ""
+
+#: includes/meta/class-term-meta.php:40
+msgid "Description for search engine results."
+msgstr ""
+
+#: includes/breadcrumbs/class-breadcrumbs-generator.php:45
+msgid "Home"
+msgstr ""
+
+#: includes/sitemap/class-sitemap-generator.php:35
+msgid "XML Sitemap"
+msgstr ""
+
+#: includes/sitemap/class-sitemap-generator.php:55
+msgid "No public post types found."
+msgstr ""
+
+#: includes/sitemap/class-sitemap-generator.php:75
+msgid "No public taxonomies found."
+msgstr ""
+
+#: includes/sitemap/class-sitemap-generator.php:95
+msgid "Error: Post type does not exist."
+msgstr ""
+
+#: includes/sitemap/class-sitemap-generator.php:105
+msgid "URL"
+msgstr ""
+
+#: includes/sitemap/class-sitemap-generator.php:106
+msgid "Last Modified"
+msgstr ""
+
+#: includes/sitemap/class-sitemap-generator.php:120
+msgid "No published content found."
+msgstr ""
+
+#: includes/sitemap/class-sitemap-generator.php:135
+msgid "Back to main sitemap"
+msgstr ""
+
+#: admin/class-dashboard-page.php:25
+msgid "SEO Overview"
+msgstr ""
+
+#: admin/class-dashboard-page.php:35
+msgid "Posts with SEO"
+msgstr ""
+
+#: admin/class-dashboard-page.php:40
+msgid "Posts without SEO"
+msgstr ""
+
+#: admin/class-dashboard-page.php:45
+msgid "Pages with SEO"
+msgstr ""
+
+#: admin/class-dashboard-page.php:50
+msgid "Pages without SEO"
+msgstr ""
+
+#: admin/class-dashboard-page.php:55
+msgid "Products with SEO"
+msgstr ""
+
+#: admin/class-dashboard-page.php:60
+msgid "Products without SEO"
+msgstr ""
+
+#: admin/class-dashboard-page.php:70
+msgid "Missing SEO Data"
+msgstr ""
+
+#: admin/class-dashboard-page.php:75
+msgid "Posts without title or description:"
+msgstr ""
+
+#: admin/class-dashboard-page.php:80
+msgid "Edit"
+msgstr ""
+
+#: admin/class-dashboard-page.php:85
+msgid "All posts have SEO data!"
+msgstr ""
+
+#: admin/class-settings-page.php:25
+msgid "Module Settings"
+msgstr ""
+
+#: admin/class-settings-page.php:30
+msgid "Enable Meta Tags"
+msgstr ""
+
+#: admin/class-settings-page.php:35
+msgid "Enable custom title tags and meta descriptions"
+msgstr ""
+
+#: admin/class-settings-page.php:40
+msgid "Enable Sitemap"
+msgstr ""
+
+#: admin/class-settings-page.php:45
+msgid "Generate XML sitemap automatically"
+msgstr ""
+
+#: admin/class-settings-page.php:50
+msgid "Enable Breadcrumbs"
+msgstr ""
+
+#: admin/class-settings-page.php:55
+msgid "Add breadcrumb navigation support"
+msgstr ""
+
+#: admin/class-settings-page.php:60
+msgid "Enable Open Graph"
+msgstr ""
+
+#: admin/class-settings-page.php:65
+msgid "Add Open Graph meta tags for social media"
+msgstr ""
+
+#: admin/class-settings-page.php:70
+msgid "Enable Canonical URLs"
+msgstr ""
+
+#: admin/class-settings-page.php:75
+msgid "Add canonical URLs to prevent duplicate content"
+msgstr ""
+
+#: admin/class-settings-page.php:80
+msgid "Redirect Attachments"
+msgstr ""
+
+#: admin/class-settings-page.php:85
+msgid "Redirect attachment pages to prevent duplicate content"
+msgstr ""
+
+#: admin/class-settings-page.php:95
+msgid "Meta Description Settings"
+msgstr ""
+
+#: admin/class-settings-page.php:100
+msgid "Length Control"
+msgstr ""
+
+#: admin/class-settings-page.php:105
+msgid "No limit"
+msgstr ""
+
+#: admin/class-settings-page.php:106
+msgid "Show warning"
+msgstr ""
+
+#: admin/class-settings-page.php:107
+msgid "Auto cut"
+msgstr ""
+
+#: admin/class-settings-page.php:115
+msgid "Breadcrumb Settings"
+msgstr ""
+
+#: admin/class-settings-page.php:120
+msgid "Home Text"
+msgstr ""
+
+#: admin/class-settings-page.php:125
+msgid "Separator"
+msgstr ""
+
+#: admin/class-settings-page.php:135
+msgid "Sitemap Settings"
+msgstr ""
+
+#: admin/class-settings-page.php:140
+msgid "Posts per page"
+msgstr ""
+
+#: admin/class-settings-page.php:145
+msgid "Maximum number of URLs per sitemap page"
+msgstr ""
+
+#: admin/class-settings-page.php:155
+msgid "Open Graph Settings"
+msgstr ""
+
+#: admin/class-settings-page.php:160
+msgid "Default Image URL"
+msgstr ""
+
+#: admin/class-settings-page.php:165
+msgid "Facebook App ID"
+msgstr ""
+
+#: admin/class-settings-page.php:170
+msgid "Twitter Card Type"
+msgstr ""
+
+#: admin/class-settings-page.php:175
+msgid "Summary"
+msgstr ""
+
+#: admin/class-settings-page.php:176
+msgid "Summary Large Image"
+msgstr ""
+
+#: admin/class-settings-page.php:185
+msgid "Save Changes"
+msgstr ""meta/class-post-meta.php:37
+msgid "SEO Settings"
+msgstr ""
+
+#: includes/meta/class-post-meta.php:50
+msgid "Title Tag"
+msgstr ""
+
+#: includes/meta/class-post-meta.php:59
+msgid "This will replace the default title in search results and browser tab."
+msgstr ""
+
+#: includes/meta/class-post-meta.php:66
+msgid "Meta Description"
+msgstr ""
+
+#: includes/meta/class-post-meta.php:74
+msgid "Enter meta description for search engines..."
+msgstr ""
+
+#: includes/meta/class-post-meta.php:80
+msgid "characters"
+msgstr ""
+
+#: includes/

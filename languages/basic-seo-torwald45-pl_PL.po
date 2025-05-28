@@ -1,0 +1,224 @@
+# Polish translation for Basic SEO Plugin Torwald45
+# Copyright (C) 2024 Torwald45
+# This file is distributed under the same license as the Basic SEO Plugin Torwald45 package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Basic SEO Plugin Torwald45 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/Torwald45/basic-seo/issues\n"
+"POT-Creation-Date: 2024-05-25 12:00+0000\n"
+"PO-Revision-Date: 2024-05-25 12:00+0000\n"
+"Last-Translator: Torwald45\n"
+"Language-Team: Polish\n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Basic SEO Settings"
+msgstr "Ustawienia Basic SEO"
+
+msgid "Basic SEO"
+msgstr "Basic SEO"
+
+msgid "Dashboard"
+msgstr "Pulpit"
+
+msgid "Settings"
+msgstr "Ustawienia"
+
+msgid "Saving..."
+msgstr "Zapisywanie..."
+
+msgid "Settings saved!"
+msgstr "Ustawienia zapisane!"
+
+msgid "Error saving settings!"
+msgstr "Blad zapisu ustawien!"
+
+msgid "SEO Settings"
+msgstr "Ustawienia SEO"
+
+msgid "Title Tag"
+msgstr "Tag Title"
+
+msgid "This will replace the default title in search results and browser tab."
+msgstr "To zastapi domyslny tytul w wynikach wyszukiwania i zakladce przegladarki."
+
+msgid "Meta Description"
+msgstr "Meta Opis"
+
+msgid "Enter meta description for search engines..."
+msgstr "Wprowadz meta opis dla wyszukiwarek..."
+
+msgid "characters"
+msgstr "znakow"
+
+msgid "Warning: Description is too long for optimal SEO"
+msgstr "Ostrzezenie: Opis jest za dlugi dla optymalnego SEO"
+
+msgid "Description for search engine results. Recommended length: 150-160 characters."
+msgstr "Opis dla wynikow wyszukiwarek. Zalecana dlugosc: 150-160 znakow."
+
+msgid "SEO Title"
+msgstr "Tytul SEO"
+
+msgid "Custom title for search results and browser tab."
+msgstr "Wlasny tytul dla wynikow wyszukiwania i zakladki przegladarki."
+
+msgid "Description for search engine results."
+msgstr "Opis dla wynikow wyszukiwarek."
+
+msgid "Home"
+msgstr "Strona glowna"
+
+msgid "XML Sitemap"
+msgstr "Mapa strony XML"
+
+msgid "No public post types found."
+msgstr "Nie znaleziono publicznych typow postow."
+
+msgid "No public taxonomies found."
+msgstr "Nie znaleziono publicznych taksonomii."
+
+msgid "Error: Post type does not exist."
+msgstr "Blad: Typ postu nie istnieje."
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Last Modified"
+msgstr "Ostatnia modyfikacja"
+
+msgid "No published content found."
+msgstr "Nie znaleziono opublikowanej zawartosci."
+
+msgid "Back to main sitemap"
+msgstr "Powrot do glownej mapy strony"
+
+msgid "SEO Overview"
+msgstr "Przeglad SEO"
+
+msgid "Posts with SEO"
+msgstr "Posty z SEO"
+
+msgid "Posts without SEO"
+msgstr "Posty bez SEO"
+
+msgid "Pages with SEO"
+msgstr "Strony z SEO"
+
+msgid "Pages without SEO"
+msgstr "Strony bez SEO"
+
+msgid "Products with SEO"
+msgstr "Produkty z SEO"
+
+msgid "Products without SEO"
+msgstr "Produkty bez SEO"
+
+msgid "Missing SEO Data"
+msgstr "Brakujace dane SEO"
+
+msgid "Posts without title or description:"
+msgstr "Posty bez tytulu lub opisu:"
+
+msgid "Edit"
+msgstr "Edytuj"
+
+msgid "All posts have SEO data!"
+msgstr "Wszystkie posty maja dane SEO!"
+
+msgid "Module Settings"
+msgstr "Ustawienia modulow"
+
+msgid "Enable Meta Tags"
+msgstr "Wlacz Meta Tagi"
+
+msgid "Enable custom title tags and meta descriptions"
+msgstr "Wlacz wlasne tagi title i meta opisy"
+
+msgid "Enable Sitemap"
+msgstr "Wlacz Mape strony"
+
+msgid "Generate XML sitemap automatically"
+msgstr "Generuj mape strony XML automatycznie"
+
+msgid "Enable Breadcrumbs"
+msgstr "Wlacz Breadcrumbs"
+
+msgid "Add breadcrumb navigation support"
+msgstr "Dodaj wsparcie nawigacji breadcrumb"
+
+msgid "Enable Open Graph"
+msgstr "Wlacz Open Graph"
+
+msgid "Add Open Graph meta tags for social media"
+msgstr "Dodaj meta tagi Open Graph dla mediow spolecznosciowych"
+
+msgid "Enable Canonical URLs"
+msgstr "Wlacz Canonical URLs"
+
+msgid "Add canonical URLs to prevent duplicate content"
+msgstr "Dodaj canonical URLs aby zapobiec duplikacji tresci"
+
+msgid "Redirect Attachments"
+msgstr "Przekieruj zalaczniki"
+
+msgid "Redirect attachment pages to prevent duplicate content"
+msgstr "Przekieruj strony zalacznikow aby zapobiec duplikacji tresci"
+
+msgid "Meta Description Settings"
+msgstr "Ustawienia Meta Opisu"
+
+msgid "Length Control"
+msgstr "Kontrola dlugosci"
+
+msgid "No limit"
+msgstr "Bez limitu"
+
+msgid "Show warning"
+msgstr "Pokaz ostrzezenie"
+
+msgid "Auto cut"
+msgstr "Automatyczne obciecie"
+
+msgid "Breadcrumb Settings"
+msgstr "Ustawienia Breadcrumb"
+
+msgid "Home Text"
+msgstr "Tekst strony glownej"
+
+msgid "Separator"
+msgstr "Separator"
+
+msgid "Sitemap Settings"
+msgstr "Ustawienia Mapy strony"
+
+msgid "Posts per page"
+msgstr "Postow na strone"
+
+msgid "Maximum number of URLs per sitemap page"
+msgstr "Maksymalna liczba URLi na strone mapy"
+
+msgid "Open Graph Settings"
+msgstr "Ustawienia Open Graph"
+
+msgid "Default Image URL"
+msgstr "Domyslny URL obrazka"
+
+msgid "Facebook App ID"
+msgstr "Facebook App ID"
+
+msgid "Twitter Card Type"
+msgstr "Typ Twitter Card"
+
+msgid "Summary"
+msgstr "Podsumowanie"
+
+msgid "Summary Large Image"
+msgstr "Podsumowanie duzy obraz"
+
+msgid "Save Changes"
+msgstr "Zapisz zmiany"

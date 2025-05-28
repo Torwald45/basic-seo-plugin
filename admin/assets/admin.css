@@ -1,0 +1,29 @@
+/* Basic SEO Plugin Torwald45 - Admin Styles */
+
+.basicseo-settings-container .postbox {
+    margin-bottom: 20px;
+}
+
+.basicseo-settings-container .postbox h2 {
+    padding: 8px 12px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.basicseo-settings-container .inside {
+    margin: 0;
+    padding: 0 12px 12px;
+}
+
+.basicseo-char-counters {
+    font-size: 11px;
+    color: #646970;
+}
+
+.basicseo-counter {
+    margin-bottom: 3px;
+}
+
+.basicseo-counter.warning {
+    color: #d63638;
+}

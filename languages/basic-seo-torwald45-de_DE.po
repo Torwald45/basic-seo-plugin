@@ -1,0 +1,223 @@
+# German translation for Basic SEO Plugin Torwald45
+# Copyright (C) 2024 Torwald45
+# This file is distributed under the same license as the Basic SEO Plugin Torwald45 package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Basic SEO Plugin Torwald45 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/Torwald45/basic-seo/issues\n"
+"POT-Creation-Date: 2024-05-25 12:00+0000\n"
+"PO-Revision-Date: 2024-05-25 12:00+0000\n"
+"Last-Translator: Torwald45\n"
+"Language-Team: German\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Basic SEO Settings"
+msgstr "Basic SEO Einstellungen"
+
+msgid "Basic SEO"
+msgstr "Basic SEO"
+
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Saving..."
+msgstr "Speichern..."
+
+msgid "Settings saved!"
+msgstr "Einstellungen gespeichert!"
+
+msgid "Error saving settings!"
+msgstr "Fehler beim Speichern der Einstellungen!"
+
+msgid "SEO Settings"
+msgstr "SEO-Einstellungen"
+
+msgid "Title Tag"
+msgstr "Title-Tag"
+
+msgid "This will replace the default title in search results and browser tab."
+msgstr "Dies ersetzt den Standard-Titel in Suchergebnissen und Browser-Tab."
+
+msgid "Meta Description"
+msgstr "Meta-Beschreibung"
+
+msgid "Enter meta description for search engines..."
+msgstr "Meta-Beschreibung für Suchmaschinen eingeben..."
+
+msgid "characters"
+msgstr "Zeichen"
+
+msgid "Warning: Description is too long for optimal SEO"
+msgstr "Warnung: Beschreibung ist zu lang für optimales SEO"
+
+msgid "Description for search engine results. Recommended length: 150-160 characters."
+msgstr "Beschreibung für Suchmaschinenergebnisse. Empfohlene Länge: 150-160 Zeichen."
+
+msgid "SEO Title"
+msgstr "SEO-Titel"
+
+msgid "Custom title for search results and browser tab."
+msgstr "Benutzerdefinierter Titel für Suchergebnisse und Browser-Tab."
+
+msgid "Description for search engine results."
+msgstr "Beschreibung für Suchmaschinenergebnisse."
+
+msgid "Home"
+msgstr "Startseite"
+
+msgid "XML Sitemap"
+msgstr "XML-Sitemap"
+
+msgid "No public post types found."
+msgstr "Keine öffentlichen Beitragstypen gefunden."
+
+msgid "No public taxonomies found."
+msgstr "Keine öffentlichen Taxonomien gefunden."
+
+msgid "Error: Post type does not exist."
+msgstr "Fehler: Beitragstyp existiert nicht."
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Last Modified"
+msgstr "Zuletzt geändert"
+
+msgid "No published content found."
+msgstr "Keine veröffentlichten Inhalte gefunden."
+
+msgid "Back to main sitemap"
+msgstr "Zurück zur Haupt-Sitemap"
+
+msgid "SEO Overview"
+msgstr "SEO-Übersicht"
+
+msgid "Posts with SEO"
+msgstr "Beiträge mit SEO"
+
+msgid "Posts without SEO"
+msgstr "Beiträge ohne SEO"
+
+msgid "Pages with SEO"
+msgstr "Seiten mit SEO"
+
+msgid "Pages without SEO"
+msgstr "Seiten ohne SEO"
+
+msgid "Products with SEO"
+msgstr "Produkte mit SEO"
+
+msgid "Products without SEO"
+msgstr "Produkte ohne SEO"
+
+msgid "Missing SEO Data"
+msgstr "Fehlende SEO-Daten"
+
+msgid "Posts without title or description:"
+msgstr "Beiträge ohne Titel oder Beschreibung:"
+
+msgid "Edit"
+msgstr "Bearbeiten"
+
+msgid "All posts have SEO data!"
+msgstr "Alle Beiträge haben SEO-Daten!"
+
+msgid "Module Settings"
+msgstr "Modul-Einstellungen"
+
+msgid "Enable Meta Tags"
+msgstr "Meta-Tags aktivieren"
+
+msgid "Enable custom title tags and meta descriptions"
+msgstr "Benutzerdefinierte Title-Tags und Meta-Beschreibungen aktivieren"
+
+msgid "Enable Sitemap"
+msgstr "Sitemap aktivieren"
+
+msgid "Generate XML sitemap automatically"
+msgstr "XML-Sitemap automatisch generieren"
+
+msgid "Enable Breadcrumbs"
+msgstr "Breadcrumbs aktivieren"
+
+msgstr "Breadcrumb-Navigation unterstützen"
+
+msgid "Enable Open Graph"
+msgstr "Open Graph aktivieren"
+
+msgid "Add Open Graph meta tags for social media"
+msgstr "Open Graph Meta-Tags für soziale Medien hinzufügen"
+
+msgid "Enable Canonical URLs"
+msgstr "Canonical URLs aktivieren"
+
+msgid "Add canonical URLs to prevent duplicate content"
+msgstr "Canonical URLs hinzufügen um doppelte Inhalte zu vermeiden"
+
+msgid "Redirect Attachments"
+msgstr "Anhänge weiterleiten"
+
+msgid "Redirect attachment pages to prevent duplicate content"
+msgstr "Anhang-Seiten weiterleiten um doppelte Inhalte zu vermeiden"
+
+msgid "Meta Description Settings"
+msgstr "Meta-Beschreibung Einstellungen"
+
+msgid "Length Control"
+msgstr "Längenkontrolle"
+
+msgid "No limit"
+msgstr "Kein Limit"
+
+msgid "Show warning"
+msgstr "Warnung anzeigen"
+
+msgid "Auto cut"
+msgstr "Automatisch kürzen"
+
+msgid "Breadcrumb Settings"
+msgstr "Breadcrumb-Einstellungen"
+
+msgid "Home Text"
+msgstr "Startseiten-Text"
+
+msgid "Separator"
+msgstr "Trennzeichen"
+
+msgid "Sitemap Settings"
+msgstr "Sitemap-Einstellungen"
+
+msgid "Posts per page"
+msgstr "Beiträge pro Seite"
+
+msgid "Maximum number of URLs per sitemap page"
+msgstr "Maximale Anzahl URLs pro Sitemap-Seite"
+
+msgid "Open Graph Settings"
+msgstr "Open Graph Einstellungen"
+
+msgid "Default Image URL"
+msgstr "Standard-Bild URL"
+
+msgid "Facebook App ID"
+msgstr "Facebook App ID"
+
+msgid "Twitter Card Type"
+msgstr "Twitter Card Typ"
+
+msgid "Summary"
+msgstr "Zusammenfassung"
+
+msgid "Summary Large Image"
+msgstr "Zusammenfassung großes Bild"
+
+msgid "Save Changes"
+msgstr "Änderungen speichern"
