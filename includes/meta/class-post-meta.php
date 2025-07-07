@@ -201,7 +201,7 @@ class BasicSEO_Torwald45_Post_Meta {
         
         // Save description
         if (isset($_POST['basicseo_meta_desc'])) {
-            $meta_desc = sanitize_textarea_field($_POST['basicseo_meta_desc']);
+            $meta_desc = sanitize_text_field($_POST['basicseo_meta_desc']);
             
             // Auto-cut if enabled
             if ($this->plugin->get_setting('meta_description.length_control') === 'auto_cut') {
