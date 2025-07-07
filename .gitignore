@@ -1,0 +1,15 @@
+# pliki systemowe
+.DS_Store
+Thumbs.db
+# katalogi IDE
+.idea/
+.vscode/
+# logi
+*.log
+# backupy
+*.bak
+*.backup
+# WordPress specific
+wp-config.php
+uploads/
+cache/
