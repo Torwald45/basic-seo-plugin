@@ -75,17 +75,17 @@ class BasicSEO_Torwald45_Admin_Init {
                    class="nav-tab <?php echo $active_tab === 'dashboard' ? 'nav-tab-active' : ''; ?>">
                     <?php _e('Dashboard', 'basic-seo-torwald45'); ?>
                 </a>
-                <a href="?page=basic-seo-torwald45&tab=settings" 
-                   class="nav-tab <?php echo $active_tab === 'settings' ? 'nav-tab-active' : ''; ?>">
-                    <?php _e('Settings', 'basic-seo-torwald45'); ?>
+                <a href="?page=basic-seo-torwald45&tab=help" 
+                   class="nav-tab <?php echo $active_tab === 'help' ? 'nav-tab-active' : ''; ?>">
+                    <?php _e('Help', 'basic-seo-torwald45'); ?>
                 </a>
             </nav>
             
             <div class="tab-content">
                 <?php
                 switch ($active_tab) {
-                    case 'settings':
-                        $this->display_settings_tab();
+                    case 'help':
+                        $this->display_help_tab();
                         break;
                     case 'dashboard':
                     default:
@@ -107,9 +107,9 @@ class BasicSEO_Torwald45_Admin_Init {
     }
     
     /**
-     * Display settings tab
+     * Display help tab
      */
-    private function display_settings_tab() {
+    private function display_help_tab() {
         $settings = new BasicSEO_Torwald45_Settings_Page();
         $settings->display();
     }

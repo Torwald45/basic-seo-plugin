@@ -1,6 +1,6 @@
 <?php
 /**
- * Settings Page
+ * Settings Page (Help)
  *
  * @package BasicSEOTorwald45
  */
@@ -47,18 +47,6 @@ class BasicSEO_Torwald45_Settings_Page {
         if (!current_user_can('manage_options')) {
             return;
         }
-        
-        // Update module settings
-        $modules = array(
-            'meta_tags' => isset($_POST['enable_meta_tags']),
-            'sitemap' => isset($_POST['enable_sitemap']),
-            'breadcrumbs' => isset($_POST['enable_breadcrumbs']),
-            'open_graph' => isset($_POST['enable_open_graph']),
-            'canonical' => isset($_POST['enable_canonical']),
-            'attachment_redirect' => isset($_POST['enable_attachment_redirect'])
-        );
-        
-        $this->plugin->update_setting('modules', $modules);
         
         // Meta description settings
         if (isset($_POST['meta_description_length_control'])) {
@@ -154,75 +142,6 @@ class BasicSEO_Torwald45_Settings_Page {
             <?php wp_nonce_field('basicseo_torwald45_settings', 'basicseo_torwald45_settings_nonce'); ?>
             
             <div class="basicseo-settings-container">
-                
-                <!-- Module Settings -->
-                <div class="postbox">
-                    <h2 class="hndle"><?php _e('Module Settings', 'basic-seo-torwald45'); ?></h2>
-                    <div class="inside">
-                        <table class="form-table">
-                            <tr>
-                                <th scope="row"><?php _e('Enable Meta Tags', 'basic-seo-torwald45'); ?></th>
-                                <td>
-                                    <label>
-                                        <input type="checkbox" name="enable_meta_tags" value="1" 
-                                               <?php checked($this->plugin->get_setting('modules.meta_tags')); ?> />
-                                        <?php _e('Enable custom title tags and meta descriptions', 'basic-seo-torwald45'); ?>
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?php _e('Enable Sitemap', 'basic-seo-torwald45'); ?></th>
-                                <td>
-                                    <label>
-                                        <input type="checkbox" name="enable_sitemap" value="1" 
-                                               <?php checked($this->plugin->get_setting('modules.sitemap')); ?> />
-                                        <?php _e('Generate XML sitemap automatically', 'basic-seo-torwald45'); ?>
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?php _e('Enable Breadcrumbs', 'basic-seo-torwald45'); ?></th>
-                                <td>
-                                    <label>
-                                        <input type="checkbox" name="enable_breadcrumbs" value="1" 
-                                               <?php checked($this->plugin->get_setting('modules.breadcrumbs')); ?> />
-                                        <?php _e('Add breadcrumb navigation support', 'basic-seo-torwald45'); ?>
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?php _e('Enable Open Graph', 'basic-seo-torwald45'); ?></th>
-                                <td>
-                                    <label>
-                                        <input type="checkbox" name="enable_open_graph" value="1" 
-                                               <?php checked($this->plugin->get_setting('modules.open_graph')); ?> />
-                                        <?php _e('Add Open Graph meta tags for social media', 'basic-seo-torwald45'); ?>
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?php _e('Enable Canonical URLs', 'basic-seo-torwald45'); ?></th>
-                                <td>
-                                    <label>
-                                        <input type="checkbox" name="enable_canonical" value="1" 
-                                               <?php checked($this->plugin->get_setting('modules.canonical')); ?> />
-                                        <?php _e('Add canonical URLs to prevent duplicate content', 'basic-seo-torwald45'); ?>
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?php _e('Redirect Attachments', 'basic-seo-torwald45'); ?></th>
-                                <td>
-                                    <label>
-                                        <input type="checkbox" name="enable_attachment_redirect" value="1" 
-                                               <?php checked($this->plugin->get_setting('modules.attachment_redirect')); ?> />
-                                        <?php _e('Redirect attachment pages to prevent duplicate content', 'basic-seo-torwald45'); ?>
-                                    </label>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
                 
                 <!-- Meta Description Settings -->
                 <div class="postbox">

@@ -16,6 +16,54 @@ if (!defined('ABSPATH')) {
 class BasicSEO_Torwald45_SEO_Analyzer {
     
     /**
+     * Get posts missing SEO data (title, description, and featured image)
+     */
+    public static function get_posts_missing_seo($post_type = 'post', $limit = 20) {
+        global $wpdb;
+        
+        $query = $wpdb->prepare(
+            "SELECT DISTINCT p.ID, p.post_title, p.post_type 
+            FROM {$wpdb->posts} p 
+            WHERE p.post_type = %s 
+            AND p.post_status = 'publish' 
+            AND (
+                p.ID NOT IN (
+                    SELECT pm1.post_id 
+                    FROM {$wpdb->postmeta} pm1 
+                    WHERE pm1.meta_key = %s AND pm1.meta_value != ''
+                )
+                OR p.ID NOT IN (
+                    SELECT pm2.post_id 
+                    FROM {$wpdb->postmeta} pm2 
+                    WHERE pm2.meta_key = %s AND pm2.meta_value != ''
+                )
+                OR p.ID NOT IN (
+                    SELECT pm3.post_id 
+                    FROM {$wpdb->postmeta} pm3 
+                    WHERE pm3.meta_key = '_thumbnail_id' AND pm3.meta_value != ''
+                )
+            )
+            ORDER BY p.post_modified DESC 
+            LIMIT %d",
+            $post_type,
+            BASICSEO_TORWALD45_POST_TITLE,
+            BASICSEO_TORWALD45_POST_DESC,
+            $limit
+        );
+        
+        $posts = $wpdb->get_results($query);
+        
+        // Add missing info for each post
+        foreach ($posts as $post) {
+            $post->missing_title = empty(get_post_meta($post->ID, BASICSEO_TORWALD45_POST_TITLE, true));
+            $post->missing_description = empty(get_post_meta($post->ID, BASICSEO_TORWALD45_POST_DESC, true));
+            $post->missing_featured_image = !has_post_thumbnail($post->ID);
+        }
+        
+        return $posts;
+    }
+    
+    /**
      * Get SEO statistics for posts
      */
     public static function get_post_seo_stats($post_type = 'post') {
@@ -54,17 +102,33 @@ class BasicSEO_Torwald45_SEO_Analyzer {
             )
         );
         
-        // Count posts with both SEO title AND description
-        $posts_with_both = $wpdb->get_var(
+        // Count posts with featured image
+        $posts_with_image = $wpdb->get_var(
+            $wpdb->prepare(
+                "SELECT COUNT(DISTINCT p.ID) 
+                FROM {$wpdb->posts} p 
+                INNER JOIN {$wpdb->postmeta} pm ON p.ID = pm.post_id 
+                WHERE p.post_type = %s 
+                AND p.post_status = 'publish' 
+                AND pm.meta_key = '_thumbnail_id' 
+                AND pm.meta_value != ''",
+                $post_type
+            )
+        );
+        
+        // Count posts with all three: SEO title, description AND featured image
+        $posts_with_all = $wpdb->get_var(
             $wpdb->prepare(
                 "SELECT COUNT(DISTINCT p.ID) 
                 FROM {$wpdb->posts} p 
                 INNER JOIN {$wpdb->postmeta} pm1 ON p.ID = pm1.post_id 
                 INNER JOIN {$wpdb->postmeta} pm2 ON p.ID = pm2.post_id 
+                INNER JOIN {$wpdb->postmeta} pm3 ON p.ID = pm3.post_id 
                 WHERE p.post_type = %s 
                 AND p.post_status = 'publish' 
                 AND pm1.meta_key = %s AND pm1.meta_value != ''
-                AND pm2.meta_key = %s AND pm2.meta_value != ''",
+                AND pm2.meta_key = %s AND pm2.meta_value != ''
+                AND pm3.meta_key = '_thumbnail_id' AND pm3.meta_value != ''",
                 $post_type,
                 BASICSEO_TORWALD45_POST_TITLE,
                 BASICSEO_TORWALD45_POST_DESC
@@ -75,38 +139,10 @@ class BasicSEO_Torwald45_SEO_Analyzer {
             'total' => intval($published_count),
             'with_title' => intval($posts_with_title),
             'with_description' => intval($posts_with_desc),
-            'with_both' => intval($posts_with_both),
-            'without_seo' => intval($published_count) - intval($posts_with_both)
+            'with_featured_image' => intval($posts_with_image),
+            'with_all' => intval($posts_with_all),
+            'missing_seo' => intval($published_count) - intval($posts_with_all)
         );
-    }
-    
-    /**
-     * Get posts without SEO data
-     */
-    public static function get_posts_without_seo($post_type = 'post', $limit = 20) {
-        global $wpdb;
-        
-        $query = $wpdb->prepare(
-            "SELECT p.ID, p.post_title, p.post_type 
-            FROM {$wpdb->posts} p 
-            WHERE p.post_type = %s 
-            AND p.post_status = 'publish' 
-            AND p.ID NOT IN (
-                SELECT DISTINCT pm1.post_id 
-                FROM {$wpdb->postmeta} pm1 
-                INNER JOIN {$wpdb->postmeta} pm2 ON pm1.post_id = pm2.post_id 
-                WHERE pm1.meta_key = %s AND pm1.meta_value != ''
-                AND pm2.meta_key = %s AND pm2.meta_value != ''
-            )
-            ORDER BY p.post_modified DESC 
-            LIMIT %d",
-            $post_type,
-            BASICSEO_TORWALD45_POST_TITLE,
-            BASICSEO_TORWALD45_POST_DESC,
-            $limit
-        );
-        
-        return $wpdb->get_results($query);
     }
     
     /**
@@ -162,6 +198,31 @@ class BasicSEO_Torwald45_SEO_Analyzer {
     }
     
     /**
+     * Get posts with missing featured image only
+     */
+    public static function get_posts_without_featured_image($post_type = 'post', $limit = 20) {
+        global $wpdb;
+        
+        $query = $wpdb->prepare(
+            "SELECT p.ID, p.post_title, p.post_type 
+            FROM {$wpdb->posts} p 
+            WHERE p.post_type = %s 
+            AND p.post_status = 'publish' 
+            AND p.ID NOT IN (
+                SELECT pm.post_id 
+                FROM {$wpdb->postmeta} pm 
+                WHERE pm.meta_key = '_thumbnail_id' AND pm.meta_value != ''
+            )
+            ORDER BY p.post_modified DESC 
+            LIMIT %d",
+            $post_type,
+            $limit
+        );
+        
+        return $wpdb->get_results($query);
+    }
+    
+    /**
      * Get overall SEO health score
      */
     public static function get_seo_health_score() {
@@ -172,7 +233,7 @@ class BasicSEO_Torwald45_SEO_Analyzer {
         foreach ($post_types as $post_type) {
             $stats = self::get_post_seo_stats($post_type);
             $total_posts += $stats['total'];
-            $posts_with_seo += $stats['with_both'];
+            $posts_with_seo += $stats['with_all'];
         }
         
         if ($total_posts === 0) {
@@ -192,7 +253,7 @@ class BasicSEO_Torwald45_SEO_Analyzer {
         foreach ($post_types as $post_type) {
             $stats = self::get_post_seo_stats($post_type);
             
-            if ($stats['total'] > 0 && $stats['without_seo'] > 0) {
+            if ($stats['total'] > 0 && $stats['missing_seo'] > 0) {
                 $post_type_object = get_post_type_object($post_type);
                 $post_type_name = $post_type_object ? $post_type_object->labels->name : $post_type;
                 
@@ -200,11 +261,11 @@ class BasicSEO_Torwald45_SEO_Analyzer {
                     'type' => 'missing_seo',
                     'message' => sprintf(
                         __('%d %s are missing SEO data', 'basic-seo-torwald45'),
-                        $stats['without_seo'],
+                        $stats['missing_seo'],
                         $post_type_name
                     ),
                     'action_url' => admin_url("edit.php?post_type={$post_type}"),
-                    'priority' => $stats['without_seo'] > 10 ? 'high' : 'medium'
+                    'priority' => $stats['missing_seo'] > 10 ? 'high' : 'medium'
                 );
             }
         }
@@ -218,8 +279,9 @@ class BasicSEO_Torwald45_SEO_Analyzer {
     public static function has_complete_seo($post_id) {
         $title = get_post_meta($post_id, BASICSEO_TORWALD45_POST_TITLE, true);
         $desc = get_post_meta($post_id, BASICSEO_TORWALD45_POST_DESC, true);
+        $has_thumbnail = has_post_thumbnail($post_id);
         
-        return !empty($title) && !empty($desc);
+        return !empty($title) && !empty($desc) && $has_thumbnail;
     }
     
     /**
@@ -232,6 +294,6 @@ class BasicSEO_Torwald45_SEO_Analyzer {
             return 100;
         }
         
-        return round(($stats['with_both'] / $stats['total']) * 100, 1);
+        return round(($stats['with_all'] / $stats['total']) * 100, 1);
     }
 }

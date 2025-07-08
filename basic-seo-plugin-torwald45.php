@@ -3,7 +3,7 @@
  * Plugin Name: Basic WP/Woo SEO Plugin
  * Plugin URI: https://github.com/Torwald45/basic-seo-plugin
  * Description: Lightweight SEO plugin for WordPress and WooCommerce with custom title tags, meta descriptions, sitemaps, breadcrumbs, and Open Graph support.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Torwald45
  * Author URI: https://github.com/Torwald45
  * License: GPL v2 or later
@@ -24,7 +24,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('BASICSEO_TORWALD45_VERSION', '1.0.3');
+define('BASICSEO_TORWALD45_VERSION', '1.0.4');
 define('BASICSEO_TORWALD45_PLUGIN_FILE', __FILE__);
 define('BASICSEO_TORWALD45_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('BASICSEO_TORWALD45_PLUGIN_URL', plugin_dir_url(__FILE__));
