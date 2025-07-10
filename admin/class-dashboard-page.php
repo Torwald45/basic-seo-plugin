@@ -44,17 +44,17 @@ class BasicSEO_Torwald45_Dashboard_Page {
                         
                         <div class="module-info">
                             <h3><?php _e('Meta Tags', 'basic-seo-torwald45'); ?></h3>
-                            <p><?php _e('Plugin automatically adds custom title tags and meta descriptions to posts/pages. Edit them in meta boxes below the editor.', 'basic-seo-torwald45'); ?></p>
+                            <p><?php _e('Plugin automatically adds custom meta title tags and meta descriptions to posts/pages. Edit them in meta boxes below the editor or use Quick Edit in post listings.', 'basic-seo-torwald45'); ?></p>
                         </div>
                         
                         <div class="module-info">
                             <h3><?php _e('XML Sitemap', 'basic-seo-torwald45'); ?></h3>
-                            <p><?php _e('Available at /sitemap.xml - automatically generated from all public posts/pages/products with pagination support.', 'basic-seo-torwald45'); ?></p>
+                          <p><?php printf(__('Available at <a href="%s" target="_blank">/sitemap.xml</a> - automatically generated from all public posts/pages/products with pagination support.', 'basic-seo-torwald45'), esc_url(home_url('/sitemap.xml'))); ?></p>
                         </div>
                         
                         <div class="module-info">
                             <h3><?php _e('Breadcrumbs', 'basic-seo-torwald45'); ?></h3>
-                            <p><?php _e('Use shortcode [breadcrumbs] in content or call do_shortcode(\'[breadcrumbs]\') in your theme template files.', 'basic-seo-torwald45'); ?></p>
+                            <p><?php _e('Use shortcode [basicseo-breadcrumb] in content or call do_shortcode(\'[basicseo-breadcrumb]\') in your theme template files.', 'basic-seo-torwald45'); ?></p>
                         </div>
                         
                         <div class="module-info">
@@ -78,7 +78,7 @@ class BasicSEO_Torwald45_Dashboard_Page {
             
             <!-- Missing SEO Data -->
             <div class="postbox">
-                <h2 class="hndle"><?php _e('Posts Missing Title and Description', 'basic-seo-torwald45'); ?></h2>
+                <h2 class="hndle"><?php _e('Posts Missing Meta Title, Meta Description and Featured Image', 'basic-seo-torwald45'); ?></h2>
                 <div class="inside">
                     <?php 
                     $has_missing_posts = false;
@@ -149,9 +149,6 @@ class BasicSEO_Torwald45_Dashboard_Page {
                 <h2 class="hndle"><?php _e('Quick Links', 'basic-seo-torwald45'); ?></h2>
                 <div class="inside">
                     <div class="basicseo-quick-links">
-                        <a href="<?php echo esc_url(home_url('/sitemap.xml')); ?>" target="_blank" class="button">
-                            <?php _e('View Sitemap', 'basic-seo-torwald45'); ?>
-                        </a>
                         <a href="https://github.com/Torwald45/basic-seo-plugin/blob/main/README.md" target="_blank" class="button">
                             <?php _e('Documentation', 'basic-seo-torwald45'); ?>
                         </a>

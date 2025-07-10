@@ -33,7 +33,6 @@ class BasicSEO_Torwald45_Breadcrumbs_Shortcode {
      */
     private function init_hooks() {
         add_shortcode('basicseo-breadcrumb', array($this, 'breadcrumb_shortcode'));
-        add_shortcode('basicseo-breadcrumbs', array($this, 'breadcrumb_shortcode')); // Alternative name
         
         // Add shortcode to Gutenberg
         add_action('init', array($this, 'register_gutenberg_block'));
