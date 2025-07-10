@@ -155,6 +155,13 @@
 
 .post-title {
     flex: 1;
+    user-select: text;
+    cursor: text;
+}
+
+.hndle {
+    user-select: text !important;
+    cursor: text !important;
 }
 
 .post-status {

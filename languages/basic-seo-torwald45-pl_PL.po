@@ -28,6 +28,9 @@ msgstr "Pulpit"
 msgid "Settings"
 msgstr "Ustawienia"
 
+msgid "Help"
+msgstr "Pomoc"
+
 msgid "Saving..."
 msgstr "Zapisywanie..."
 
@@ -35,7 +38,7 @@ msgid "Settings saved!"
 msgstr "Ustawienia zapisane!"
 
 msgid "Error saving settings!"
-msgstr "Blad zapisu ustawien!"
+msgstr "Błąd zapisu ustawień!"
 
 msgid "SEO Settings"
 msgstr "Ustawienia SEO"
@@ -44,46 +47,46 @@ msgid "Title Tag"
 msgstr "Tag Title"
 
 msgid "This will replace the default title in search results and browser tab."
-msgstr "To zastapi domyslny tytul w wynikach wyszukiwania i zakladce przegladarki."
+msgstr "To zastąpi domyślny tytuł w wynikach wyszukiwania i zakładce przeglądarki."
 
 msgid "Meta Description"
 msgstr "Meta Opis"
 
 msgid "Enter meta description for search engines..."
-msgstr "Wprowadz meta opis dla wyszukiwarek..."
+msgstr "Wprowadź meta opis dla wyszukiwarek..."
 
 msgid "characters"
-msgstr "znakow"
+msgstr "znaków"
 
 msgid "Warning: Description is too long for optimal SEO"
-msgstr "Ostrzezenie: Opis jest za dlugi dla optymalnego SEO"
+msgstr "Ostrzeżenie: Opis jest za długi dla optymalnego SEO"
 
 msgid "Description for search engine results. Recommended length: 150-160 characters."
-msgstr "Opis dla wynikow wyszukiwarek. Zalecana dlugosc: 150-160 znakow."
+msgstr "Opis dla wyników wyszukiwarek. Zalecana długość: 150-160 znaków."
 
 msgid "SEO Title"
-msgstr "Tytul SEO"
+msgstr "Tytuł SEO"
 
 msgid "Custom title for search results and browser tab."
-msgstr "Wlasny tytul dla wynikow wyszukiwania i zakladki przegladarki."
+msgstr "Własny tytuł dla wyników wyszukiwania i zakładki przeglądarki."
 
 msgid "Description for search engine results."
-msgstr "Opis dla wynikow wyszukiwarek."
+msgstr "Opis dla wyników wyszukiwarek."
 
 msgid "Home"
-msgstr "Strona glowna"
+msgstr "Strona główna"
 
 msgid "XML Sitemap"
 msgstr "Mapa strony XML"
 
 msgid "No public post types found."
-msgstr "Nie znaleziono publicznych typow postow."
+msgstr "Nie znaleziono publicznych typów postów."
 
 msgid "No public taxonomies found."
 msgstr "Nie znaleziono publicznych taksonomii."
 
 msgid "Error: Post type does not exist."
-msgstr "Blad: Typ postu nie istnieje."
+msgstr "Błąd: Typ postu nie istnieje."
 
 msgid "URL"
 msgstr "URL"
@@ -92,13 +95,13 @@ msgid "Last Modified"
 msgstr "Ostatnia modyfikacja"
 
 msgid "No published content found."
-msgstr "Nie znaleziono opublikowanej zawartosci."
+msgstr "Nie znaleziono opublikowanej zawartości."
 
 msgid "Back to main sitemap"
-msgstr "Powrot do glownej mapy strony"
+msgstr "Powrót do głównej mapy strony"
 
 msgid "SEO Overview"
-msgstr "Przeglad SEO"
+msgstr "Przegląd SEO"
 
 msgid "Posts with SEO"
 msgstr "Posty z SEO"
@@ -119,76 +122,88 @@ msgid "Products without SEO"
 msgstr "Produkty bez SEO"
 
 msgid "Missing SEO Data"
-msgstr "Brakujace dane SEO"
+msgstr "Brakujące dane SEO"
 
 msgid "Posts without title or description:"
-msgstr "Posty bez tytulu lub opisu:"
+msgstr "Posty bez tytułu lub opisu:"
 
 msgid "Edit"
 msgstr "Edytuj"
 
 msgid "All posts have SEO data!"
-msgstr "Wszystkie posty maja dane SEO!"
+msgstr "Wszystkie posty mają dane SEO!"
 
 msgid "Module Settings"
-msgstr "Ustawienia modulow"
+msgstr "Ustawienia modułów"
+
+msgid "Meta Tags"
+msgstr "Meta Tagi"
 
 msgid "Enable Meta Tags"
-msgstr "Wlacz Meta Tagi"
+msgstr "Włącz Meta Tagi"
 
 msgid "Enable custom title tags and meta descriptions"
-msgstr "Wlacz wlasne tagi title i meta opisy"
+msgstr "Włącz własne tagi title i meta opisy"
 
 msgid "Enable Sitemap"
-msgstr "Wlacz Mape strony"
+msgstr "Włącz Mapę strony"
 
 msgid "Generate XML sitemap automatically"
-msgstr "Generuj mape strony XML automatycznie"
+msgstr "Generuj mapę strony XML automatycznie"
+
+msgid "Breadcrumbs"
+msgstr "Breadcrumbs"
 
 msgid "Enable Breadcrumbs"
-msgstr "Wlacz Breadcrumbs"
+msgstr "Włącz Breadcrumbs"
 
 msgid "Add breadcrumb navigation support"
 msgstr "Dodaj wsparcie nawigacji breadcrumb"
 
+msgid "Open Graph"
+msgstr "Open Graph"
+
 msgid "Enable Open Graph"
-msgstr "Wlacz Open Graph"
+msgstr "Włącz Open Graph"
 
 msgid "Add Open Graph meta tags for social media"
-msgstr "Dodaj meta tagi Open Graph dla mediow spolecznosciowych"
+msgstr "Dodaj meta tagi Open Graph dla mediów społecznościowych"
+
+msgid "Canonical URLs"
+msgstr "Canonical URLs"
 
 msgid "Enable Canonical URLs"
-msgstr "Wlacz Canonical URLs"
+msgstr "Włącz Canonical URLs"
 
 msgid "Add canonical URLs to prevent duplicate content"
-msgstr "Dodaj canonical URLs aby zapobiec duplikacji tresci"
+msgstr "Dodaj canonical URLs aby zapobiec duplikacji treści"
 
 msgid "Redirect Attachments"
-msgstr "Przekieruj zalaczniki"
+msgstr "Przekieruj załączniki"
 
 msgid "Redirect attachment pages to prevent duplicate content"
-msgstr "Przekieruj strony zalacznikow aby zapobiec duplikacji tresci"
+msgstr "Przekieruj strony załączników aby zapobiec duplikacji treści"
 
 msgid "Meta Description Settings"
 msgstr "Ustawienia Meta Opisu"
 
 msgid "Length Control"
-msgstr "Kontrola dlugosci"
+msgstr "Kontrola długości"
 
 msgid "No limit"
 msgstr "Bez limitu"
 
 msgid "Show warning"
-msgstr "Pokaz ostrzezenie"
+msgstr "Pokaż ostrzeżenie"
 
 msgid "Auto cut"
-msgstr "Automatyczne obciecie"
+msgstr "Automatyczne obcięcie"
 
 msgid "Breadcrumb Settings"
 msgstr "Ustawienia Breadcrumb"
 
 msgid "Home Text"
-msgstr "Tekst strony glownej"
+msgstr "Tekst strony głównej"
 
 msgid "Separator"
 msgstr "Separator"
@@ -197,16 +212,16 @@ msgid "Sitemap Settings"
 msgstr "Ustawienia Mapy strony"
 
 msgid "Posts per page"
-msgstr "Postow na strone"
+msgstr "Postów na stronę"
 
 msgid "Maximum number of URLs per sitemap page"
-msgstr "Maksymalna liczba URLi na strone mapy"
+msgstr "Maksymalna liczba URLi na stronę mapy"
 
 msgid "Open Graph Settings"
 msgstr "Ustawienia Open Graph"
 
 msgid "Default Image URL"
-msgstr "Domyslny URL obrazka"
+msgstr "Domyślny URL obrazka"
 
 msgid "Facebook App ID"
 msgstr "Facebook App ID"
@@ -218,7 +233,46 @@ msgid "Summary"
 msgstr "Podsumowanie"
 
 msgid "Summary Large Image"
-msgstr "Podsumowanie duzy obraz"
+msgstr "Podsumowanie duży obraz"
 
 msgid "Save Changes"
 msgstr "Zapisz zmiany"
+
+msgid "Plugin automatically adds custom meta title tags and meta descriptions to posts/pages. Edit them in meta boxes below the editor or use Quick Edit in post listings."
+msgstr "Plugin automatycznie dodaje własne meta tagi title i opisy do postów/stron. Edytuj je w polach meta poniżej edytora lub używaj Quick Edit w listach postów."
+
+msgid "Use shortcode [basicseo-breadcrumb] in content or call do_shortcode('[basicseo-breadcrumb]') in your theme template files."
+msgstr "Użyj shortcode [basicseo-breadcrumb] w treści lub wywołaj do_shortcode('[basicseo-breadcrumb]') w plikach szablonu motywu."
+
+msgid "Automatic meta tags for Facebook/Twitter sharing. Uses featured image, custom meta title/description, and fallback settings."
+msgstr "Automatyczne meta tagi dla udostępniania Facebook/Twitter. Używa obrazu wyróżniającego, własnego meta title/opisu i ustawień zapasowych."
+
+msgid "Automatic rel=canonical tags added to all pages to prevent duplicate content issues."
+msgstr "Automatyczne tagi rel=canonical dodane do wszystkich stron aby zapobiec problemom z duplikacją treści."
+
+msgid "Redirects attachment pages to parent posts to prevent duplicate content and improve SEO."
+msgstr "Przekierowuje strony załączników do postów nadrzędnych aby zapobiec duplikacji treści i poprawić SEO."
+
+msgid "Posts Missing Meta Title, Meta Description and Featured Image"
+msgstr "Posty bez Meta Title, Meta Description i Obrazu wyróżniającego"
+
+msgid "Available at <a href=\"%s\" target=\"_blank\">/sitemap.xml</a> - automatically generated from all public posts/pages/products with pagination support."
+msgstr "Dostępne pod <a href=\"%s\" target=\"_blank\">/sitemap.xml</a> - automatycznie generowane ze wszystkich publicznych postów/stron/produktów z obsługą paginacji."
+
+msgid "Missing: %s"
+msgstr "Brakuje: %s"
+
+msgid "title"
+msgstr "tytuł"
+
+msgid "description"
+msgstr "opis"
+
+msgid "featured image"
+msgstr "obraz wyróżniający"
+
+msgid "title, description"
+msgstr "tytuł, opis"
+
+msgid "title, description, featured image"
+msgstr "tytuł, opis, obraz wyróżniający"
