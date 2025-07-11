@@ -31,7 +31,7 @@ class BasicSEO_Torwald45_Meta_Output {
     /**
      * Initialize hooks
      */
-    private function init_hooks() {
+    public function init_hooks() {
         add_action('wp_head', array($this, 'output_meta_tags'), 2);
     }
     
@@ -55,7 +55,7 @@ class BasicSEO_Torwald45_Meta_Output {
     /**
      * Output basic meta tags (description, keywords, etc.)
      */
-    private function output_basic_meta_tags() {
+    public function output_basic_meta_tags() {
         // Meta description
         $description = $this->get_meta_description();
         if ($description) {
@@ -83,7 +83,7 @@ class BasicSEO_Torwald45_Meta_Output {
     /**
      * Get meta description for current page
      */
-    private function get_meta_description() {
+    public function get_meta_description() {
         // WooCommerce shop page
         if (function_exists('is_shop') && is_shop()) {
             return $this->get_shop_description();
@@ -115,7 +115,7 @@ class BasicSEO_Torwald45_Meta_Output {
     /**
      * Get description for WooCommerce shop page
      */
-    private function get_shop_description() {
+    public function get_shop_description() {
         if (!function_exists('wc_get_page_id')) {
             return null;
         }
@@ -150,7 +150,7 @@ class BasicSEO_Torwald45_Meta_Output {
     /**
      * Get description for singular content
      */
-    private function get_singular_description() {
+    public function get_singular_description() {
         $post_id = get_queried_object_id();
         
         if (!$post_id) {
@@ -188,7 +188,7 @@ class BasicSEO_Torwald45_Meta_Output {
     /**
      * Get description for taxonomy pages
      */
-    private function get_taxonomy_description() {
+    public function get_taxonomy_description() {
         $term = get_queried_object();
         
         if (!$term || !isset($term->term_id)) {
@@ -217,7 +217,7 @@ class BasicSEO_Torwald45_Meta_Output {
     /**
      * Get description for WooCommerce product category
      */
-    private function get_product_category_description() {
+    public function get_product_category_description() {
         $term = get_queried_object();
         
         if (!$term || !isset($term->term_id) || $term->taxonomy !== 'product_cat') {
@@ -241,7 +241,7 @@ class BasicSEO_Torwald45_Meta_Output {
     /**
      * Get description for homepage
      */
-    private function get_homepage_description() {
+    public function get_homepage_description() {
         // Try to get from static front page
         if (is_front_page() && !is_home()) {
             $page_id = get_option('page_on_front');
@@ -261,7 +261,7 @@ class BasicSEO_Torwald45_Meta_Output {
     /**
      * Get meta keywords (basic implementation)
      */
-    private function get_meta_keywords() {
+    public function get_meta_keywords() {
         // Note: Meta keywords are largely ignored by search engines
         // This is included for completeness but not actively used
         
@@ -284,7 +284,7 @@ class BasicSEO_Torwald45_Meta_Output {
     /**
      * Get robots meta directives
      */
-    private function get_robots_meta() {
+    public function get_robots_meta() {
         $directives = array();
         
         // Default directives
@@ -386,7 +386,7 @@ class BasicSEO_Torwald45_Meta_Output {
     /**
      * Get schema.org type for post type
      */
-    private function get_schema_type($post_type) {
+    public function get_schema_type($post_type) {
         $types = array(
             'post' => 'Article',
             'page' => 'WebPage',

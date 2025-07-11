@@ -31,7 +31,7 @@ class BasicSEO_Torwald45_Title_Handler {
     /**
      * Initialize hooks
      */
-    private function init_hooks() {
+    public function init_hooks() {
         // Hook into WordPress title generation
         add_filter('pre_get_document_title', array($this, 'modify_document_title'), 10);
         add_filter('document_title_parts', array($this, 'modify_title_parts'), 10);
@@ -80,7 +80,7 @@ class BasicSEO_Torwald45_Title_Handler {
     /**
      * Get custom title for current page
      */
-    private function get_custom_title() {
+    public function get_custom_title() {
         // WooCommerce shop page
         if (function_exists('is_shop') && is_shop()) {
             return $this->get_shop_title();
@@ -107,7 +107,7 @@ class BasicSEO_Torwald45_Title_Handler {
     /**
      * Get title for WooCommerce shop page
      */
-    private function get_shop_title() {
+    public function get_shop_title() {
         if (!function_exists('wc_get_page_id')) {
             return null;
         }
@@ -125,7 +125,7 @@ class BasicSEO_Torwald45_Title_Handler {
     /**
      * Get title for singular content (posts, pages, products)
      */
-    private function get_singular_title() {
+    public function get_singular_title() {
         $post_id = get_queried_object_id();
         
         if (!$post_id) {
@@ -146,7 +146,7 @@ class BasicSEO_Torwald45_Title_Handler {
     /**
      * Get title for taxonomy pages
      */
-    private function get_taxonomy_title() {
+    public function get_taxonomy_title() {
         $term = get_queried_object();
         
         if (!$term || !isset($term->term_id)) {
@@ -166,7 +166,7 @@ class BasicSEO_Torwald45_Title_Handler {
     /**
      * Get title for WooCommerce product category
      */
-    private function get_product_category_title() {
+    public function get_product_category_title() {
         $term = get_queried_object();
         
         if (!$term || !isset($term->term_id) || $term->taxonomy !== 'product_cat') {

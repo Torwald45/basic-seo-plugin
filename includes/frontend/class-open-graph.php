@@ -31,7 +31,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Initialize hooks
      */
-    private function init_hooks() {
+    public function init_hooks() {
         add_action('wp_head', array($this, 'output_open_graph_tags'), 5);
     }
     
@@ -57,7 +57,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Output basic Open Graph tags
      */
-    private function output_basic_og_tags() {
+    public function output_basic_og_tags() {
         // Basic required OG tags
         echo '<meta property="og:type" content="' . esc_attr($this->get_og_type()) . '">' . "\n";
         echo '<meta property="og:title" content="' . esc_attr($this->get_og_title()) . '">' . "\n";
@@ -105,7 +105,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Output Twitter Card tags
      */
-    private function output_twitter_tags() {
+    public function output_twitter_tags() {
         $card_type = $this->plugin->get_setting('open_graph.twitter_card_type', 'summary');
         
         echo '<meta name="twitter:card" content="' . esc_attr($card_type) . '">' . "\n";
@@ -131,7 +131,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Output Facebook-specific tags
      */
-    private function output_facebook_tags() {
+    public function output_facebook_tags() {
         $app_id = $this->plugin->get_setting('open_graph.facebook_app_id');
         
         if ($app_id) {
@@ -148,7 +148,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Output article-specific Open Graph tags
      */
-    private function output_article_tags() {
+    public function output_article_tags() {
         $post_id = get_queried_object_id();
         $post = get_post($post_id);
         
@@ -187,7 +187,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Output product-specific Open Graph tags
      */
-    private function output_product_tags() {
+    public function output_product_tags() {
         if (!class_exists('WC_Product')) {
             return;
         }
@@ -223,7 +223,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Get Open Graph type
      */
-    private function get_og_type() {
+    public function get_og_type() {
         if (is_front_page() || is_home()) {
             return 'website';
         }
@@ -246,7 +246,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Get Open Graph title
      */
-    private function get_og_title() {
+    public function get_og_title() {
         // Try to get custom SEO title first
         $title_handler = new BasicSEO_Torwald45_Title_Handler();
         $custom_title = $title_handler->get_custom_title();
@@ -262,7 +262,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Get Open Graph description
      */
-    private function get_og_description() {
+    public function get_og_description() {
         $meta_output = new BasicSEO_Torwald45_Meta_Output();
         $description = $meta_output->get_meta_description();
         
@@ -281,7 +281,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Get Open Graph URL
      */
-    private function get_og_url() {
+    public function get_og_url() {
         if (is_front_page()) {
             return home_url('/');
         }
@@ -293,7 +293,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Get Open Graph locale
      */
-    private function get_og_locale() {
+    public function get_og_locale() {
         $locale = get_locale();
         
         // Convert WordPress locale to Facebook locale format
@@ -319,7 +319,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Get Open Graph image
      */
-    private function get_og_image() {
+    public function get_og_image() {
         $image = null;
         
         // Single post/page/product
@@ -381,7 +381,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Get first image from post content
      */
-    private function get_first_content_image($content) {
+    public function get_first_content_image($content) {
         if (empty($content)) {
             return null;
         }
@@ -398,7 +398,7 @@ class BasicSEO_Torwald45_Open_Graph {
     /**
      * Validate Open Graph image
      */
-    private function validate_og_image($image_url) {
+    public function validate_og_image($image_url) {
         // Basic validation - check if URL looks valid
         if (!filter_var($image_url, FILTER_VALIDATE_URL)) {
             return false;
