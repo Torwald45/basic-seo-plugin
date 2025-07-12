@@ -50,7 +50,7 @@ msgid "This will replace the default title in search results and browser tab."
 msgstr "To zastąpi domyślny tytuł w wynikach wyszukiwania i zakładce przeglądarki."
 
 msgid "Meta Description"
-msgstr "Meta Opis"
+msgstr "Meta opis"
 
 msgid "Enter meta description for search engines..."
 msgstr "Wprowadź meta opis dla wyszukiwarek..."
@@ -64,8 +64,8 @@ msgstr "Ostrzeżenie: Opis jest za długi dla optymalnego SEO"
 msgid "Description for search engine results. Recommended length: 150-160 characters."
 msgstr "Opis dla wyników wyszukiwarek. Zalecana długość: 150-160 znaków."
 
-msgid "SEO Title"
-msgstr "Tytuł SEO"
+msgid "Meta Title"
+msgstr "Meta tytuł"
 
 msgid "Custom title for search results and browser tab."
 msgstr "Własny tytuł dla wyników wyszukiwania i zakładki przeglądarki."
