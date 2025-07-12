@@ -52,6 +52,9 @@ msgstr "To zastąpi domyślny tytuł w wynikach wyszukiwania i zakładce przegl�
 msgid "Meta Description"
 msgstr "Meta opis"
 
+msgid "Meta Description:"
+msgstr "Meta opis:"
+
 msgid "Enter meta description for search engines..."
 msgstr "Wprowadź meta opis dla wyszukiwarek..."
 
@@ -276,3 +279,9 @@ msgstr "tytuł, opis"
 
 msgid "title, description, featured image"
 msgstr "tytuł, opis, obraz wyróżniający"
+
+msgid "Meta Title:"
+msgstr "Meta tytuł:"
+
+msgid "Description:"
+msgstr "Opis:"
